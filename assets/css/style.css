@@ -16,6 +16,14 @@ body {
     color: #333;
 }
 
+hr{
+    border: 0;
+    display: block;
+    background-color: #e5e5e5;
+    height: 1px;
+    margin:  40px 0;
+}
+
 h1,
 h2,
 h3,
@@ -219,8 +227,17 @@ h6 {
     padding: 80px 0;
 }
 
+.section--devices{
+    background: url(../images/devices/bg-devices.png) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
 .section__header {
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
     width: 100%;
     max-width: 950px;
     text-align: center;
@@ -336,4 +353,57 @@ statistics
 .stat_item .stat_text{
     font-size: 14px;
     text-transform: uppercase;
+}
+
+/*Services */
+.services{
+    display: flex;
+}
+
+.services__item{
+    flex: 1 1 0;
+    padding-left: 85px;
+    padding-right: 40px;
+    position: relative;
+    padding-right: 20px;
+}
+
+.services__item .services__icon{
+    top: 0;
+    left: 25px;
+    position: absolute;
+    z-index: 1;
+ 
+}
+
+.services__item .services__title{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+ 
+}
+
+.services__item .services__text{
+    font-size: 15px;
+    color: #999999;
+ 
+}
+
+
+/* Devices */
+.devices{
+    max-width: 600px;
+    width:100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices__item{
+    display: block;
+}
+.devices__item:last-child{
+    position: absolute;
+    bottom: -80px;
+    right: -5%;
 }
